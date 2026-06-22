@@ -14,13 +14,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
     rel="stylesheet">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
   <header>
     <div class="container container__header">
-      <div class="logo"><a href="/">Marse.pe</a></div>
+
+      <div class="logo">
+        <a href="/">
+          <img src="./img/marse-logo-glande.png" alt="logo">
+        </a>
+      </div>
+
       <nav>
         <ul>
           <li><a href="/">Inicio</a></li>
@@ -28,6 +35,7 @@
           <li><a href="/">Categorias</a></li>
           <li><a href="/">Contacto</a></li>
         </ul>
+
       </nav>
     </div>
   </header>
@@ -37,14 +45,81 @@
       <div class="container container__block-a">
         <h2>Bienvenido a Marse.pe</h2>
         <p>Encuetra la indumentaria que necesita tu proyecto</p>
-        <p>idk merchandasign</p>
+        <button>Contacto <i class="bi bi-whatsapp"></i></button>
       </div>
     </div>
 
     <div class="container container__main">
       <h2>Explora por Nuestras<br> Categorías</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi dolorem consequuntur architecto iure veritatis odio officiis culpa adipisci dicta.</p>
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nisi dolorem consequuntur architecto iure
+        veritatis odio officiis culpa adipisci dicta.</p>
+
+      <div class="card__container">
+
+        <div class="card">
+          <img src="https://img.magnific.com/fotos-premium/articulos-uniforme-trabajo-electricista-fondo-madera-vista-superior-004-dia-trabajo_870512-15178.jpg" alt="imagen-random">
+          <div class="card__context">
+            <h3 class="card__title">Ropa Industrial</h3>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea itaque temporibus eum soluta a esse inventore.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7e4CVsNBSArSXqfTJJ7a0dgW-Na9BpAGBsJI52JWRLrWcycf16KgpMUSB&s=10">
+          <div class="card__context">
+            <h3 class="card__title">Camisetas Deportivas</h3>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea itaque temporibus eum soluta a esse inventore.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://a.storyblok.com/f/165154/1450x1450/4affb3ca7c/cc-714_update-image-to-brand-colours_hero-banner_1450x1450-1.png/m/" alt="imagen-random">
+          <div class="card__context">
+            <h3 class="card__title">Ropa Personalizada</h3>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea itaque temporibus eum soluta a esse inventore.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjM5QztxJKXsLw2AKYNmQDnSPd4HNP_j_dhVq9__-uW0353gTNMP_uwMA&s=10" alt="imagen-random">
+          <div class="card__context">
+            <h3 class="card__title">Merchandisign</h3>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea itaque temporibus eum soluta a esse inventore.</p>
+          </div>
+        </div>
+
+      </div>
+
     </div>
+
+    <div class="block-b">
+      <div class="container container__block-b">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes preguntas sobre nuestros productos y servicios?. Rellena este formulario para contactarte y resolver tus dudas</p>
+        <form>
+          <input placeholder="Nombre" id="name" type="text">
+          <input placeholder="Correo o telefono" id="contact" type="text">
+          <textarea placeholder="Mensaje" id="message" rows="5" name="" id=""></textarea>
+          <button>Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container container__main container__final">
+      <h3>¿Por qué elegirnos?</h3>
+      <ul>
+        <li>
+          <p><i class="bi bi-check"></i>Expertos con más de 5 años de experiencia en el sector</p>
+        </li>
+        <li>
+          <p><i class="bi bi-check"></i>Entregas puntuales y control de calidad</p>
+        </li>
+        <li>
+          <p><i class="bi bi-check"></i>Calidad profesional que optimiza tu inversión</p>
+        </li>
+      </ul>
+    </div>
+
   </main>
 
   <footer>
@@ -52,6 +127,8 @@
       <p>Desarrolado por <a href="https://osotripolar.com">OsoTripolar</a></p>
     </div>
   </footer>
+
+  <script src="./js/app.js"></script>
 
 </body>
 

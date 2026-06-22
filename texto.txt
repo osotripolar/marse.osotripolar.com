@@ -1,4 +1,14 @@
 ME FALTA APRENER:
 
-- CSS: position fixed, sticky, absolute
+- CSS: position relative, fixed, sticky, absolute
 - CSS: imagenes
+- FRONTEND: Aprender a manipular svg
+- FRONTEND/CSS: Aprender a hacer cards
+- CSS: grid
+- CSS: degradados
+- FRONTEND/CSS: Aprender a hacer formularios
+
+ME FALTA HACER:
+
+- estructurar bien el footer
+- arreglar degrade del fondo de la imagen
