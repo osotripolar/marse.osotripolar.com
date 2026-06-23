@@ -1,9 +1,14 @@
 :root {
   --color-main: rgb(0, 100, 255);
+  --color-main-dark: rgb(0, 80, 201);
+
   --color-altern: rgb(255, 220, 0);
-  --color-white-ligth: rgb(210,210,210);
-  --color-dark-ligth: rgb(50,50,50);
-  --color-dark-ligth-2: rgb(150,150,150);
+  --color-altern-dark: rgb(255, 200, 0);
+  
+  --color-white-ligth: rgb(210, 210, 210);
+
+  --color-dark-ligth: rgb(50, 50, 50);
+  --color-dark-ligth-2: rgb(150, 150, 150);
 }
 
 * {
@@ -20,8 +25,12 @@ body {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--color-dark-ligth);
+}
+
+a {
+  font-size: 18px;
 }
 
 h1 {
@@ -35,7 +44,7 @@ h2 {
   font-size: 30px;
 }
 
-h4{
+h4 {
   font-size: 20px;
   margin: 0;
 }
@@ -54,6 +63,7 @@ button {
 
 button:hover {
   cursor: pointer;
+  background-color: var(--color-altern-dark);
 }
 
 li {
@@ -127,10 +137,20 @@ header .logo a {
   justify-content: center;
 }
 
+
 nav ul {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   margin: 10px 0;
+}
+
+nav a{
+  padding: 6px;
+  border-radius: 4px;
+}
+
+nav a:hover{
+  background-color: var(--color-main-dark);
 }
 
 /* ========== MAIN ===================== */
@@ -161,19 +181,19 @@ main {
   text-align: center;
 }
 
-.block__welcome p{
+.block__welcome p {
   color: inherit;
 }
 
-.block__welcome::before{
+.block__welcome::before {
   content: "";
   position: absolute;
   z-index: 1;
   inset: 0;
   background: linear-gradient(to bottom,
-        rgba(0, 0, 0, 0 ) 0%,
-        rgba(0, 0, 0, 0.1) 23%,
-        rgba(0, 0, 0, 0.65) 100%);
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.1) 23%,
+      rgba(0, 0, 0, 0.65) 100%);
 }
 
 .block__welcome .container {
@@ -199,7 +219,7 @@ main {
   padding: 26px 0;
 }
 
-.block__contact .container{
+.block__contact .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,6 +235,10 @@ main {
 .block__contact button {
   color: white;
   background-color: var(--color-main);
+}
+
+.block__contact button:hover {
+  background-color: var(--color-main-dark);
 }
 
 .block__contact form {
@@ -333,16 +357,12 @@ footer a {
   color: inherit;
 }
 
-footer a:hover {
-  opacity: 0.7;
-}
-
 footer p {
   color: var(--color-white-ligth);
   margin: 0;
 }
 
-footer a{
+footer a {
   margin: 0;
 }
 
@@ -351,6 +371,7 @@ footer .sub {
   margin-bottom: 10px;
   display: list-item;
   list-style-type: disc;
+  color: var(--color-white-ligth);
 }
 
 .container__footer p,
@@ -373,6 +394,10 @@ footer .sub {
   justify-content: center;
   padding: 20px 0 10px;
   margin-bottom: 17px;
+}
+
+.footer__icons a:hover{
+  color: var(--color-altern);
 }
 
 .footer__icons i {
@@ -400,6 +425,17 @@ footer h4 {
 
 @media (min-width: 1024px) {
 
+
+  header {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-radius: 10px;
+    max-width: 1200px;
+  }
+
   .container__header {
     flex-direction: row;
   }
@@ -413,16 +449,15 @@ footer h4 {
     gap: 40px;
     grid-template-columns: 1fr 1fr;
   }
-  
+
 
 
   .footer__details__container {
-    width: 60%;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
   }
 
-  footer .container{
+  footer .container {
     width: 50%;
   }
 
