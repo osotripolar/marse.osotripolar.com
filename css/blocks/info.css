@@ -1,0 +1,28 @@
+.block__info h5{
+  font-size: 22px;
+}
+
+.block__info i{
+  font-size: 40px;
+}
+
+.info__container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.info__card{
+  background-color: rgb(242, 242, 242);
+  border-radius: 15px;
+}
+
+@media (min-width: 1024px) {
+  
+  .info__container{
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+}

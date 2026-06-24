@@ -266,6 +266,23 @@ main .container {
   border-color: var(--color-main);
 }
 
+.block__contact form .formMessage{
+  color: inherit;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.block__contact form .formMessage.wrong{
+  opacity: 1;
+  color: red;
+}
+
+.block__contact form .formMessage.great{
+  opacity: 1;
+  color: green;
+}
+
 /* card */
 
 
@@ -433,7 +450,6 @@ footer h4 {
 
 @media (min-width: 1024px) {
 
-
   header {
     position: fixed;
     top: 30px;
@@ -441,7 +457,8 @@ footer h4 {
     transform: translateX(-50%);
 
     border-radius: 10px;
-    max-width: 1200px;
+    width: 1200px;
+    max-width: 95%;
   }
 
   .container__header {
