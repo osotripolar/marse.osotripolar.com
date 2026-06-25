@@ -149,7 +149,7 @@ function showFormMessage(message, operation = true) {
 
 async function postForm(name,contact,message){
 
-  const res = await fetch('https://api.osotripolar/marse',{
+  const res = await fetch('https://api.osotripolar.com/marse',{
     method: 'POST',
     headers: {
       'Content-type' : 'application/json'
